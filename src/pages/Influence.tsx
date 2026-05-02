@@ -41,7 +41,7 @@ export default function Influence() {
         <h1 
           className="font-bold tracking-[0.3em]"
           style={{ 
-            color: "#060606", 
+            color: "#040404", 
             fontSize: "clamp(3rem, 10vw, 6rem)" 
           }}
         >
