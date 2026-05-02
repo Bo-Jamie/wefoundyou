@@ -55,7 +55,6 @@ export default function Enter() {
         
         <form onSubmit={handleSubmit} className="space-y-6 pt-12">
           <div className="relative flex items-center justify-center">
-            <div className="absolute left-0 text-zinc-600 z-10">$</div>
             <input
               type="password"
               value={password}
