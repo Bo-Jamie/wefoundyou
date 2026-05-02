@@ -7,9 +7,7 @@ export default function Found() {
 
   useEffect(() => {
     document.title = "AdCamp - The Collective";
-    if (!sessionStorage.getItem("arg_level_influence")) {
-      navigate("/");
-    }
+
   }, [navigate]);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
