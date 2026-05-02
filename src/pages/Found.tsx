@@ -51,7 +51,6 @@ export default function Found() {
         <div className="space-y-4 text-xs md:text-sm text-zinc-400 tracking-[0.1em] leading-relaxed uppercase">
           <p>This was never just a puzzle.</p>
           <p>It was a demonstration of everything we study.</p>
-          <p>Visual Communication. Hidden Messaging. Campaigns that move people.</p>
           <p className="text-white font-bold tracking-[0.2em] mt-4">YOU JUST LIVED ONE.</p>
         </div>
 
