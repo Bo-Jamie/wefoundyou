@@ -5,27 +5,34 @@ export default function Influence() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "// reflection //";
+    document.title = "// signal //";
     if (!sessionStorage.getItem("arg_level_communication")) {
       navigate("/");
     }
   }, [navigate]);
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center p-4 z-10 relative fade-up">
-      <main className="w-full text-center space-y-12 flex flex-col items-center">
-        <p className="text-xs md:text-sm text-zinc-500 tracking-[0.2em] uppercase font-mono opacity-60">
-          The Collective is a reflection of everything you've seen.
+    <div className="flex min-h-screen flex-col bg-[#000000] p-4 z-10 relative fade-up font-mono">
+      <div className="absolute top-16 left-0 w-full text-center space-y-3 z-20 pointer-events-none">
+        <p className="text-sm md:text-base text-zinc-500 tracking-[0.2em]">
+          Three signals received. One transmission remains.
         </p>
-        
-        <div className="bg-white p-4 inline-block scale-x-[-1]">
-          <img 
-            src="/signal-qr.png" 
-            alt="QR Code" 
-            className="w-[180px] h-[180px] md:w-[240px] md:h-[240px] block"
-          />
-        </div>
-      </main>
+        <p className="text-xs text-zinc-800 tracking-[0.3em]">
+          Turn up the signal.
+        </p>
+      </div>
+
+      <div className="flex-grow flex items-center justify-center pointer-events-none">
+        <h1 
+          className="font-bold tracking-[0.3em]"
+          style={{ 
+            color: "#0a0a0a", 
+            fontSize: "clamp(3rem, 10vw, 6rem)" 
+          }}
+        >
+          FOUND
+        </h1>
+      </div>
     </div>
   );
 }
