@@ -18,12 +18,11 @@ export default function Influence() {
           The Collective is a reflection of everything you've seen.
         </p>
         
-        <div className="bg-white p-4 inline-block">
+        <div className="bg-white p-4 inline-block scale-x-[-1]">
           <img 
             src="/signal-qr.png" 
             alt="QR Code" 
             className="w-[180px] h-[180px] md:w-[240px] md:h-[240px] block"
-            style={{ transform: "scaleX(-1)" }}
           />
         </div>
       </main>
